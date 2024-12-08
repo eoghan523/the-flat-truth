@@ -1,19 +1,19 @@
-import axios from 'axios';
+//import axios from 'axios';
 
-import mockAxios from './MockApi';
+//import mockAxios from './MockApi';
 
-const api = axios.create({
-  baseURL: 'http://localhost:8000',
-});
+//const api = axios.create({
+  //baseURL: 'http://localhost:8000',
+//});
 
-api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('authToken');
-  console.log('token', token);
-  if (token) {
-    config.headers.Authorization = `token ${token}`;
-  }
-  return config;
-});
+//api.interceptors.request.use((config) => {
+  //const token = localStorage.getItem('authToken');
+  //console.log('token', token);
+  //if (token) {
+    //config.headers.Authorization = `token ${token}`;
+  //}
+  //return config;
+//});
 
 //export default mockAxios
-export default api;
+//export default api;
