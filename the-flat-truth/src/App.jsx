@@ -9,7 +9,6 @@ import FlatEarthFacts from './pages/FlatEarthFacts';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
-
   return (
     <Router>
       <Routes>
@@ -19,9 +18,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/flatearthfacts" element={<FlatEarthFacts />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<PageNotFound />} /> 
       </Routes>
     </Router>
   );
 }
+
 export default App;
